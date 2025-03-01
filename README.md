@@ -20,7 +20,7 @@
 
 2) USB OTG (Allows the ESP32 board to send and receive data over a USB)
 
-   &nbsp;&nbsp;&nbsp;&nbsp;(JP3 USB Connector):
+  &nbsp;&nbsp;&nbsp;&nbsp;(JP3 USB Connector):
    - Pin 1 (D-) Negative signal
    - Pin 2 (D+) Positive signal
   
@@ -29,24 +29,24 @@
 
 3) 32.768 kHz (RTC)
 
-   &nbsp;&nbsp;&nbsp;&nbsp;(X1):
+  &nbsp;&nbsp;&nbsp;&nbsp;(X1):
    - low frequency crystal used in RTC functions
   
-   &nbsp;&nbsp;&nbsp;&nbsp;(C4 & C7):
+  &nbsp;&nbsp;&nbsp;&nbsp;(C4 & C7):
    - 12 pF
    - capacitors that are used to stabalize crystal oscillations
   
-   &nbsp;&nbsp;&nbsp;&nbsp;(R3 & R5)
+  &nbsp;&nbsp;&nbsp;&nbsp;(R3 & R5)
 
 4) ESP32 U1 (contains the processor, Wi-Fi, Bluetooth, and GPIOs)
 
-   &nbsp;&nbsp;&nbsp;&nbsp;(Pins):
+  &nbsp;&nbsp;&nbsp;&nbsp;(Pins):
    - GND Connects to the ground
    - 3V3 is our 3.3V Power supply
    - EN is the enable pin
    - EPAD must be connected to GND
   
-   &nbsp;&nbsp;&nbsp;&nbsp;(GPIO Pins & Functions):
+  &nbsp;&nbsp;&nbsp;&nbsp;(GPIO Pins & Functions):
    - (IO0 - IO48) -pins that can be used for multiple different tasks such as digital input/output, PWM, ADC, DAC, etc.
    - IO47 & IO48 operate in the 1.8V domain range
   
@@ -55,23 +55,23 @@
   - RXD0 (Receives Data, Pin 36)
   - Used for UART communication
 
-   &nbsp;&nbsp;&nbsp;&nbsp;(JTAG):
+  &nbsp;&nbsp;&nbsp;&nbsp;(JTAG):
    - TMS, TDI, TDO, TCK
    - used for advanced debugging (stepping through code, memory inspection)
 
 5) Boot & Reset Circuit (Ensures proper booting and resetting of ESP32-S3)
 
-   &nbsp;&nbsp;&nbsp;&nbsp;SW1 (Push Button):
+  &nbsp;&nbsp;&nbsp;&nbsp;SW1 (Push Button):
    - Pressing it forces a reset by pulling the EN pin to GND
 
-   &nbsp;&nbsp;&nbsp;&nbsp;(R7):
+  &nbsp;&nbsp;&nbsp;&nbsp;(R7):
    - Helps us get a solid electrical connection
   
-   &nbsp;&nbsp;&nbsp;&nbsp;(C8):
+  &nbsp;&nbsp;&nbsp;&nbsp;(C8):
    - 0.1 uF
    - Helps us filter out the rapid voltage change, debounces the reset switch
   
-   &nbsp;&nbsp;&nbsp;&nbsp;(General Notes)
+  &nbsp;&nbsp;&nbsp;&nbsp;(General Notes)
    - When SW1 is pressed:
    - EN is pulled LOW - ESP32 resets
    - EN returns HIGH - ESP 32 starts to run again
