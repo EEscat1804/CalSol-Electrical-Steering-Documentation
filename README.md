@@ -4,6 +4,8 @@
 
 <img width="515" alt="Documentation Picture" src="https://github.com/user-attachments/assets/093bd5ac-63aa-4c7b-8b5c-953f2f3af9b0" />
 
+
+
 1) VDD33 (Power supply for the ESP32-S3-WROOM-1, 33 stands for 3.3 VOLTS)
 
   &nbsp;&nbsp;&nbsp;&nbsp;(C1 and C3):
