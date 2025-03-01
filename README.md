@@ -27,7 +27,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;(R6 & R4):
    - resistors
 
-**`3) 32.768 kHz (RTC)`**
+**`3) 32.768 kHz (RTC, Gives us the stable frequency needed for accurate time measurement)`**
 
   &nbsp;&nbsp;&nbsp;&nbsp;(X1):
    - low frequency crystal used in RTC functions
