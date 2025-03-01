@@ -6,7 +6,7 @@
 
 
 
-1) VDD33 (Power supply for the ESP32-S3-WROOM-1, 33 stands for 3.3 VOLTS)
+1) **`VDD33 (Power supply for the ESP32-S3-WROOM-1, 33 stands for 3.3 VOLTS)`**
 
   &nbsp;&nbsp;&nbsp;&nbsp;(C1 and C3):
   - decoupling capacitors that filters out noise and sudden voltage drops
@@ -18,7 +18,7 @@
   - C2 gives us a delay when powering the board on to help ESP32 start properly
   - R1 helps regulate the voltage and make sure the pin does not float
 
-2) USB OTG (Allows the ESP32 board to send and receive data over a USB)
+2) **`USB OTG (Allows the ESP32 board to send and receive data over a USB)`**
 
   &nbsp;&nbsp;&nbsp;&nbsp;(JP3 USB Connector):
    - Pin 1 (D-) Negative signal
@@ -27,7 +27,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;(R6 & R4):
    - resistors
 
-3) 32.768 kHz (RTC)
+3) **`32.768 kHz (RTC)`**
 
   &nbsp;&nbsp;&nbsp;&nbsp;(X1):
    - low frequency crystal used in RTC functions
@@ -38,7 +38,7 @@
   
   &nbsp;&nbsp;&nbsp;&nbsp;(R3 & R5)
 
-4) ESP32 U1 (contains the processor, Wi-Fi, Bluetooth, and GPIOs)
+4) **`ESP32 U1 (contains the processor, Wi-Fi, Bluetooth, and GPIOs)`**
 
   &nbsp;&nbsp;&nbsp;&nbsp;(Pins):
    - GND Connects to the ground
@@ -59,7 +59,7 @@
    - TMS, TDI, TDO, TCK
    - used for advanced debugging (stepping through code, memory inspection)
 
-5) Boot & Reset Circuit (Ensures proper booting and resetting of ESP32-S3)
+5) **`Boot & Reset Circuit (Ensures proper booting and resetting of ESP32-S3)`**
 
   &nbsp;&nbsp;&nbsp;&nbsp;SW1 (Push Button):
    - Pressing it forces a reset by pulling the EN pin to GND
